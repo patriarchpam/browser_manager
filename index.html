@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; margin-top: 2rem; color: var(--text-color, #777); padding-bottom: 2rem; }
+    .attribution a { color: var(--red-500, #E45E5F); }
+  </style>
+</head>
+<body data-theme="light">
+  <div class="top-bar">
+    <div class="logo-area">
+      <img src="./assets/images/logo.svg" alt="Logo">
+      <span>Extensions</span>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <img src="./assets/images/icon-moon.svg" alt="" class="theme-icon theme-icon-moon">
+      <img src="./assets/images/icon-sun.svg" alt="" class="theme-icon theme-icon-sun">
+    </button>
+  </div>
+
+  <div class="main-content">
+    <header class="content-header">
+      <h1 class="app-title">Extensions List</h1>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="inactive">Inactive</button>
+      </div>
+    </header>
+
+    <main class="extensions-grid" id="extensions-list">
+      <!-- Extensions will be dynamically populated here -->
+    </main>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
